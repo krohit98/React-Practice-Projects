@@ -1,0 +1,23 @@
+{
+    "about":"I am Kumar Rohit, a software engineer. Here are some of the practice applications that I built using React, which is a JavaScript library to build elegant frontend applications. Explore by clicking on the tabs below.",
+    "projects":[
+        {
+            "Title":"Shopping Cart",
+            "About":{}
+        },
+        {
+            "Title":"Blinking Paragraph",
+            "About":{}
+        },
+        {
+            "Title":"Quiz App",
+            "About":{}
+        }
+    ],
+    "contact":{
+        "email":"rohit1k98@gmail.com",
+        "linkedin":"https://www.linkedin.com/in/kumar-rohit-17b752186/",
+        "github":"https://github.com/krohit98",
+        "instagram":"https://www.instagram.com/thecodebuilder/?hl=en"
+    }
+}

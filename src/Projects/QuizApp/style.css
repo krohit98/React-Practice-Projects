@@ -1,0 +1,88 @@
+#quiz-app{
+    width:100%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    text-align:left;
+}
+
+#title{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+.instructions{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.main-section button, #return-btn{
+    min-width:100px;
+    font-size:18px;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background-color:rgba(45, 81, 241, 0.8);
+    color:white;
+    margin-top:30px;
+    cursor:pointer;
+    transition: background-color 0.3s;
+}
+
+.main-section button:hover, #return-btn:hover{
+    background-color:rgb(45, 81, 241);
+}
+
+#question-block{
+    font-size:20px;
+    width:40vw;
+}
+
+#question-header{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    border-radius:5px;
+    background-color:black;
+    color:white;
+}
+
+.timer{
+    color:rgb(255, 56, 56);
+}
+
+.stopped-timer{
+    color:rgba(255, 56, 56, 0.6) !important;
+}
+
+#question{
+    padding:20px;
+}
+.option{
+    list-style: none;
+    padding:10px 20px;
+    background:rgb(245, 245, 245);
+    margin-bottom:5px;
+    border-radius:10px;
+    cursor:pointer;
+}
+.option:hover{
+    background:rgb(230, 230, 230);
+}
+.selected-correct, .selected-correct:hover{
+    background:rgb(184, 255, 143);
+}
+.selected-wrong, .selected-wrong:hover{
+    background:rgb(255, 143, 143);
+}
+.correct-answer, .correct-answer:hover{
+    background:rgb(255, 234, 143);
+}
+
+#score-value{
+    font-size:30px;
+}

@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{height:100%;}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#pageWrapper{
+    min-height: calc(100vh - 60px);
+}
+
+#header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px 5vw;
+    background-color: rgb(15, 35, 44);
+    color:white;
+}
+
+#main-title, #project-title{
+    font-size:20px;
+}
+
+#header-btns{
+    display:flex;
+    width:180px;
+    justify-content: space-between;
+}
+
+#project-about-btn, #back-btn{
+    cursor:pointer;
+    border:1px solid white;
+    padding:5px 0;
+    border-radius:100px;
+    width:80px;
+    transition: color 0.3s, border 0.3s;
+}
+
+#project-about-btn:hover, #back-btn:hover{
+    color:rgb(255, 214, 100);
+    border:1px solid rgb(255, 214, 100);
+}
+
+#page-content{
+    margin-top:60px;
+}
+
+#home{
+    padding: 10px 5vw;
+}
+
+#about{
+    font-size:18px;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+#about a{
+    text-decoration: none;
+    color:rgb(60, 60, 253,0.8);
+    transition:color 0.3s;
+}
+
+#about a:hover{
+    color:rgba(60, 60, 253,1);
+}
+
+#project-links{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:20px;
+}
+
+.project-link{
+    padding:10px;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    transition:color 0.3s;
+    background:rgb(15, 35, 44)
+}
+
+.project-link:hover{
+    color:rgb(255, 214, 100)
+}
+
+#footer{
+    background-color: rgb(15, 35, 44);
+    color:white;
+    display:flex;
+    height:150px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#email-account{
+    text-decoration: none;
+    color:rgba(255, 214, 100,0.5);
+    transition:color 0.3s;
+}
+
+#email-account:hover{
+    text-decoration: none;
+    color:rgba(255, 214, 100,1);
+}
+
+#social-links{
+    display:flex;
+    justify-content:space-between;
+    list-style: none;
+}
+
+.social-account a{
+    text-decoration: none;
+    margin:0 20px;
+    color:rgba(60, 60, 253,0.5);
+    transition: color 0.3s;
+}
+
+.social-account a:hover{
+    color:rgba(60, 60, 253,1);
+}

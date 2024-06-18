@@ -1,0 +1,224 @@
+#shopping-cart{
+    display:flex;
+    width:100%;
+    padding:0 5%;
+    justify-content: space-between;
+}
+
+#product-section{
+    width:60%;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+}
+
+#cart-section{
+    width:35%;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+}
+
+#product-heading, #cart-heading{
+    font-size:30px;
+    padding:10px;
+    background:rgb(0, 32, 53);
+    color:white;
+}
+
+#productList{
+    border-bottom:5px solid rgba(0, 32, 53, 0.993);
+    flex:1;
+    overflow-y:auto;
+}
+
+#loader-wrapper{
+    background:white;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    border:2px solid black;
+    border-top:2px solid transparent;
+    animation: rotate infinite 1s;
+}
+
+@keyframes rotate{ 
+    0% {transform: rotate(0deg);} 
+    5% {transform: rotate(18deg);} 
+    10% {transform: rotate(36deg);} 
+    15% {transform: rotate(54deg);} 
+    20% {transform: rotate(72deg);} 
+    25% {transform: rotate(90deg);}
+    30% {transform: rotate(108deg);}
+    35% {transform: rotate(126deg);}
+    40% {transform: rotate(144deg);}
+    45% {transform: rotate(162deg);}
+    50% {transform: rotate(180deg);}
+    55% {transform: rotate(198deg);}
+    60% {transform: rotate(216deg);}
+    65% {transform: rotate(234deg);}
+    70% {transform: rotate(252deg);}
+    75% {transform: rotate(270deg);}
+    80% {transform: rotate(288deg);}
+    85% {transform: rotate(306deg);}
+    90% {transform: rotate(324deg);}
+    95% {transform: rotate(342deg);} 
+    100% {transform: rotate(360deg);} 
+}
+
+.productItem{
+    display:flex;
+    border:1px solid rgb(200,200,200);
+}
+
+.productImage{
+    padding:10px;
+}
+
+.productImage img{
+    width:100px;
+}
+
+#enlargedImage{
+    position:absolute;
+    top:10vh;
+    left:20vw;
+    height:80vh;
+    max-width:60vw;
+    padding:20px;
+    box-shadow:0 0 20px 0px black;
+    background-color: white;
+    border-radius:20px;
+    display:none;
+}
+
+.productDetails{
+    text-align: left;
+    padding:5px;
+    width:80%;
+}
+
+.productTitle, .productPrice{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.productCategory, .productRating{
+    color:rgb(100,100,100);
+    margin-bottom:5px;
+}
+
+.addItemBtn{
+    width:100px;
+    padding:8px 0;
+    font-size:16px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+    background-color:rgba(76, 76, 255, 0.8);
+    color:white;
+    transition:background-color 0.3s;
+    float:right;
+}
+
+.addItemBtn:hover{
+    background-color:rgba(76, 76, 255, 1);
+}
+
+#cart{
+    overflow-y:auto;
+    flex:1;
+}
+
+#cartItem{
+    border-bottom:1px solid rgb(200,200,200);
+    padding:10px;
+    list-style: none;
+    text-align: left;
+}
+
+#empty-cart-msg{
+    color:red;
+    margin-top:40px;
+}
+
+.cartItemTitle{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.cartItemDetails{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartItemPrice{
+    font-size:20px;
+}
+
+.cartItemQtySection{
+    display:flex;
+    justify-content: space-between;
+    width:120px;
+}
+
+.cartItemIncreaseQty, .cartItemDecreaseQty{
+    font-size:22px;
+    width:25px;
+    border-radius:5px;
+    border:none;
+    background-color:rgba(239, 239, 240, 0.993);
+    transition: background-color 0.3s, color 0.3s;
+    cursor:pointer;
+}
+
+.cartItemQty{
+    font-size:18px;
+}
+
+.cartItemIncreaseQty:hover, .cartItemDecreaseQty:hover{
+    background:black;
+    color:white;
+}
+
+
+
+.cartItemDecreaseQty:disabled:hover{
+    background-color:rgba(239, 239, 240, 0.993);
+    color:revert;
+}
+
+.removeItemBtn{
+    background:none;
+    border:none;
+    background-image:url('../../../public/images/trash-icon-red.png');
+    width:40px;
+    background-size:80%;
+    background-repeat:no-repeat;
+    background-position: 100%;
+    cursor:pointer;
+}
+
+#cart-total{
+    background-color:rgb(0, 32, 53);
+    padding:10px;
+    color:white;
+    display:flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+#total-amount{
+    font-size:30px;
+    margin-left:20px;
+}
+
