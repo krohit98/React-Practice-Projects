@@ -12,6 +12,14 @@
         {
             "Title":"Quiz App",
             "About":{}
+        },
+        {
+            "Title":"Tic-Tac-Toe",
+            "About":{}
+        },
+        {
+            "Title":"Stopwatch",
+            "About":{}
         }
     ],
     "contact":{

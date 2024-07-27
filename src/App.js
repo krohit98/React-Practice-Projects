@@ -7,6 +7,8 @@ import Home from './Components/Home';
 import ShoppingCart from './Projects/ShoppingCart/Components/ShoppingCart';
 import BlinkingPraragraph from './Projects/BlinkingParagraph/Components/BlinkingParagraph';
 import QuizApp from './Projects/QuizApp/Components/QuizApp';
+import TicTacToe from './Projects/TicTacToe/Components/TicTacToe';
+import Stopwatch from './Projects/Stopwatch/Stopwatch';
 
 function App() {
 
@@ -29,6 +31,12 @@ function App() {
             :
             selectedProject.Title === "Quiz App"?
               <QuizApp />
+            :
+            selectedProject.Title === "Tic-Tac-Toe"?
+              <TicTacToe />
+            :
+            selectedProject.Title === "Stopwatch"?
+              <Stopwatch />
             :
             ''
           :
