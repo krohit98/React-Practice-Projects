@@ -1,0 +1,22 @@
+#stopwatch{
+    width:100%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#stopwatch .counter{
+    font-size:50px;
+    color:rgb(100,100,100);
+    letter-spacing: 5px;
+}
+#stopwatch .counter SPAN SUP{
+    font-size:20px;
+    color:rgb(150,150,150);
+}
+#stopwatch .counterButtons{
+    display:flex;
+    width: 30%;
+    justify-content: space-between;
+}
