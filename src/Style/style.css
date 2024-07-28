@@ -42,6 +42,25 @@ html,body{height:100%;}
     color:white;
 }
 
+#heading{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#back-btn{
+    margin-right: 10px;
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+    cursor:pointer;
+    transition: color 0.3s, border 0.3s;
+}
+
+#back-btn:hover{
+    color:rgb(255, 214, 100);
+}
+
 #main-title, #project-title{
     font-size:20px;
 }
@@ -52,7 +71,7 @@ html,body{height:100%;}
     justify-content: space-between;
 }
 
-#project-about-btn, #back-btn{
+#project-about-btn{
     cursor:pointer;
     border:1px solid white;
     padding:5px 0;
@@ -61,7 +80,7 @@ html,body{height:100%;}
     transition: color 0.3s, border 0.3s;
 }
 
-#project-about-btn:hover, #back-btn:hover{
+#project-about-btn:hover{
     color:rgb(255, 214, 100);
     border:1px solid rgb(255, 214, 100);
 }
